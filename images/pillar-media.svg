@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" data-name="Layer 1" viewBox="0 0 128 128">
+  <defs>
+    <style>.cls-1{opacity:0.15;}.cls-2{fill:#0cc;}.cls-3{fill:url(#linear-gradient);}.cls-4{fill:url(#linear-gradient-2);}.cls-5{fill:url(#linear-gradient-3);}.cls-6{fill:url(#linear-gradient-4);}.cls-7{fill:url(#linear-gradient-5);}.cls-8{fill:url(#linear-gradient-6);}.cls-9{fill:url(#linear-gradient-7);}.cls-10{fill:#609;opacity:0.5;isolation:isolate;}</style>
+    <linearGradient id="linear-gradient" x1="-561.11925" y1="127.31801" x2="-561.11925" y2="146.43252" gradientTransform="matrix(0.8872, -0.46138, 0.46138, 0.8872, 524.80369, -270.33866)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fba"></stop>
+      <stop offset="0.22201" stop-color="#ffceaa"></stop>
+      <stop offset="0.45037" stop-color="#ffd9aa"></stop>
+      <stop offset="0.69304" stop-color="#fda"></stop>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="90.81713" y1="93.30905" x2="74.98376" y2="101.73105" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c09"></stop>
+      <stop offset="1" stop-color="#609"></stop>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="92.06701" y1="95.65882" x2="76.23364" y2="104.08082" gradientTransform="translate(55.49534 -27.85314) rotate(27.47618)" xlink:href="#linear-gradient-2"></linearGradient>
+    <linearGradient id="linear-gradient-4" x1="56.49691" y1="67.10005" x2="99.7638" y2="80.76327" gradientUnits="userSpaceOnUse">
+      <stop offset="0.25" stop-color="#ce0394"></stop>
+      <stop offset="1" stop-color="#f42"></stop>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="38.98119" y1="33.38862" x2="44.87659" y2="55.95958" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fda"></stop>
+      <stop offset="0.48643" stop-color="#ffdbaa"></stop>
+      <stop offset="0.71993" stop-color="#ffd3aa"></stop>
+      <stop offset="0.89894" stop-color="#ffc6aa"></stop>
+      <stop offset="1" stop-color="#fba"></stop>
+    </linearGradient>
+    <linearGradient id="linear-gradient-6" x1="65.90925" y1="35.60392" x2="43.45058" y2="52.78481" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f42"></stop>
+      <stop offset="0.75" stop-color="#c09"></stop>
+    </linearGradient>
+    <linearGradient id="linear-gradient-7" x1="52.16472" y1="24.5182" x2="44.19189" y2="30.46975" xlink:href="#linear-gradient-5"></linearGradient>
+  </defs>
+  <g class="cls-1">
+    <circle class="cls-2" cx="64" cy="64" r="60"></circle>
+  </g>
+  <path class="cls-3" d="M90.253,98.05993l-10.2277-7.5015.268,12.681,2.27489,9.09646a15.35978,15.35978,0,0,1,11.85569,8.06475l.59311-.31027-4.44119-8.54011a1.65268,1.65268,0,0,1-1.87912-.8648,1.59472,1.59472,0,1,1,2.82658-1.46993,1.6527,1.6527,0,0,1-.37115,2.035l4.44047,8.53872.59065-.309a15.53309,15.53309,0,0,1,.21052-14.33422Z"></path>
+  <polygon class="cls-4" points="90.879 95.761 78.052 102.431 77.542 101.451 76.09 98.658 88.916 91.988 90.879 95.761"></polygon>
+  <rect class="cls-5" x="76.5468" y="98.35513" width="16.33071" height="2.4317" transform="translate(-36.38474 50.31582) rotate(-27.47618)"></rect>
+  <path class="cls-6" d="M89.33412,93.61634,77.183,99.93538a3.337,3.337,0,0,1-4.54651-1.23551l-24.11-43.08321A3.33693,3.33693,0,0,1,50.12591,51.185l14.8353-7.71493a3.337,3.337,0,0,1,4.54652,1.2355L90.93352,89.18473A3.337,3.337,0,0,1,89.33412,93.61634Z"></path>
+  <path class="cls-7" d="M39.355,33.84859l-3.24439,1.76428s3.5232,24.48,14.37881,37.16248c0,0,2.49327-2.78668,1.56685-4.38686s-3.28458-1.17908-3.28458-1.17908-7.4819-11.43205-10.82228-31.13333l1.94027-.89657Z"></path>
+  <path class="cls-8" d="M80.42542,61.381c-.594-1.24231-5.40426-10.54452-6.056-11.79779C63.80413,29.26683,48.67611,13.65264,41.87152,17.19129s-2.709,24.89014,7.85627,45.20648c.65175,1.25327,5.50491,10.53316,6.18085,11.73287Z"></path>
+  <path class="cls-9" d="M38.85984,30.696c.12743,1.0124.29366,2.06546.49518,3.15257l17.60166-9.15348q-1.16142-1.18392-2.29662-2.21587Z"></path>
+  <polygon class="cls-10" points="59.324 74.912 79.103 64.626 78.118 62.581 58.216 72.931 59.324 74.912"></polygon>
+</svg>

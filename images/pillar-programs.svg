@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" data-name="Layer 1" viewBox="0 0 128 128">
+  <defs>
+    <style>.cls-1{opacity:0.15;}.cls-2{fill:#0cc;}.cls-3{fill:url(#linear-gradient);}.cls-4{fill:#609;opacity:0.5;isolation:isolate;}.cls-5{fill:#fba;}.cls-6{fill:url(#linear-gradient-2);}.cls-7{fill:url(#linear-gradient-3);}.cls-8{fill:#fda;}</style>
+    <linearGradient id="linear-gradient" x1="64.37715" y1="337.97546" x2="64.37715" y2="259.97546" gradientTransform="matrix(1, 0, 0, -1, 0, 378)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f42"></stop>
+      <stop offset="0.75" stop-color="#ce0394"></stop>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="64" y1="320.93843" x2="64" y2="259.97547" gradientTransform="matrix(1, 0, 0, -1, 0, 378)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#609"></stop>
+      <stop offset="1" stop-color="#c09"></stop>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="64" y1="320.93843" x2="64" y2="300.9368" xlink:href="#linear-gradient"></linearGradient>
+  </defs>
+  <g class="cls-1">
+    <circle class="cls-2" cx="64" cy="64" r="60"></circle>
+  </g>
+  <path class="cls-3" d="M20.37715,40.02454h88a8,8,0,0,1,8,8v66a4,4,0,0,1-4,4h-96a4,4,0,0,1-4-4v-66A8,8,0,0,1,20.37715,40.02454Z"></path>
+  <rect class="cls-4" x="12.42516" y="51.93843" width="103.95199" height="4.89046"></rect>
+  <path class="cls-5" d="M64.5,19.93843a29.8945,29.8945,0,0,1,14.40466,3.54339A29.11137,29.11137,0,0,1,81,34.43843V57.06157h9V38.43843c0-5.71413-3.31814-11.15781-8.95646-14.84054a5.85279,5.85279,0,0,1-2.0245-2.27852C75.78887,14.87372,70.34849,10.93843,64.5,10.93843h-1c-5.84849,0-11.28887,3.93529-14.519,10.38094a5.85279,5.85279,0,0,1-2.0245,2.27852C41.31814,27.28062,38,32.7243,38,38.43843V57.06157h9V34.43843a29.11137,29.11137,0,0,1,2.09534-10.95661A29.8945,29.8945,0,0,1,63.5,19.93843Z"></path>
+  <rect class="cls-6" x="38" y="57.06157" width="52" height="60.96296"></rect>
+  <path class="cls-7" d="M90,70.15566a3.987,3.987,0,0,1-2.87153,3.83821A84.75365,84.75365,0,0,1,64,77.06157a84.75409,84.75409,0,0,1-23.12847-3.0677A3.987,3.987,0,0,1,38,70.15566V57.06157H90Z"></path>
+  <circle class="cls-8" cx="64" cy="67.06157" r="3.12959"></circle>
+</svg>

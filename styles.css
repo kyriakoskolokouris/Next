@@ -1,21 +1,830 @@
+@font-face {
+  font-family: "TNW Avalon";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://cdn4.tnwcdn.com/assets/fonts/tnw-avalon/tnw-avalon-bold.woff")
+      format("woff"),
+    url("https://cdn4.tnwcdn.com/assets/fonts/tnw-avalon/tnw-avalon-bold.woff2")
+      format("woff2");
+}
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  min-width: 100%;
+  height: 100vh;
+  background-color: #ececec;
+}
 
 /*1. NAV*/
 
-    /* mobile <768px */
+nav {
+  height: 48px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-bottom: rgba(128, 128, 128, 0.267) 1px solid;
+  position: fixed;
+  top: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.logo-area {
+  padding: 10px 20px;
+  display: flex;
+  cursor: pointer;
+  padding: 40px 20px;
+}
 
-    /* tablet <1024px */
+.logo {
+  min-width: 70px;
+  margin-left: 5px;
+}
 
+.logo:hover {
+  fill: magenta;
+}
 
-    /* bigger screens */
+.top-menu {
+  display: flex;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 20px;
+  font-family: "Nova Square";
+}
 
-/* logo */
+.top-menu a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #505666;
+}
 
+.top-menu a:hover,
+.material-icons:hover {
+  color: black;
+}
+
+.material-icons {
+  cursor: pointer;
+  color: #505666;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* HEADER */
+header {
+  min-height: 90px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ececec;
+  padding: 50px;
+  align-items: center;
+}
+
+header svg {
+  width: 230px;
+  padding: 50px;
+}
+
+header .motto {
+  font-size: 20px;
+  color: #505666;
+  padding: 50px;
+  font-family: "Rubik";
+  font-weight: lighter;
+}
 
 /*2. GRID */
 
-    /* Bigger >768px */
+.grid-container {
+  display: grid;
+  margin: 0 20px;
+  padding: 0;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: repeat(5 1fr);
+  grid-template-areas:
+    "grid-item1 grid-item2 grid-item3"
+    "grid-item1 grid-item2 grid-item3"
+    "grid-item1 grid-item5 grid-item5"
+    "grid-item4 grid-item5 grid-item5"
+    "grid-item4 grid-item5 grid-item5";
+  grid-gap: 10px;
+}
 
-    /* Smaller <768px */
+.grid-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
 
+grid-item1,
+grid-item2,
+grid-item3,
+grid-item4,
+grid-item5 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-container .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.grid-container .image:hover img {
+  transform: scale(1.02);
+  transition: 0.7s;
+}
+.grid-item1 {
+  grid-area: grid-item1;
+}
+.grid-item2 {
+  grid-area: grid-item2;
+}
+.grid-item3 {
+  grid-area: grid-item3;
+}
+.grid-item4 {
+  grid-area: grid-item4;
+}
+.grid-item5 {
+  grid-area: grid-item5;
+}
+/* POPULAR */
+.top-5 {
+  margin: 0 20px;
+  min-height: 440px;
+  background-color: rgb(230, 230, 230);
+}
+
+.top-5 h2 {
+  margin: 40px auto;
+  text-align: center;
+  color: gray;
+  padding: 40px;
+  font-family: "Nova Square";
+}
+.popular-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.popular {
+  display: flex;
+  font-family: "Rubik";
+}
+
+.bignum {
+  font-size: 40px;
+  color: rgb(187, 16, 187);
+  padding: 0 12px;
+}
+
+.popular h4 {
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+/* LATEST STORIES */
+
+.latest {
+  background-color: white;
+  min-height: 550px;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.latest h1 {
+  font-family: "Rubik";
+  font-size: 38px;
+  padding: 25px;
+}
+
+.flex-stories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0 auto;
+}
+
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  gap: 10px;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.image-wrapper img {
+  padding: 20px;
+}
+
+.text-wrapper {
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.text-wrapper h2 {
+  font-size: 18px;
+}
+.text-wrapper span {
+  color: gray;
+  padding: 10px 0;
+}
+/* CHANNELS */
+
+.channels {
+  min-height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+}
+
+.channels h1 {
+  font-family: "Rubik";
+  font-size: 38px;
+  padding: 25px;
+}
+
+.channel img {
+  width: 100%;
+  gap: 5px;
+}
+
+/* 7. NEWSLETTER */
+.email {
+  min-height: 303px;
+  background: linear-gradient(
+      217deg,
+      rgb(100, 4, 78),
+      rgba(138, 41, 85, 0.877) 70.71%
+    ),
+    linear-gradient(227deg, rgb(48, 5, 44), rgb(187, 29, 90) 70.71%),
+    linear-gradient(336deg, rgb(136, 109, 127), rgb(209, 46, 241) 70.71%);
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+}
+
+.email h1 {
+  font-family: "TNW Avalon";
+  color: white;
+  font-size: 38px;
+  padding: 20px;
+  text-align: center;
+}
+
+.email p {
+  font-family: "TNW Avalon";
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+/* input */
+
+.input {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+#mail {
+  width: 46px;
+  height: 26px;
+  fill: rgb(167, 170, 178);
+  left: 10px;
+  padding-top: 32px;
+  position: absolute;
+  z-index: 4;
+  left: 25%;
+  float: left;
+  cursor: pointer;
+}
+
+.input input {
+  font-family: "Rubik";
+  height: 50px;
+  min-width: 50%;
+  padding: 14px 24px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  text-indent: 14px;
+}
+
+.teal {
+  color: #0cc;
+}
+
+.input button {
+  height: 48px;
+  min-width: 10%;
+  padding: 14px 24px;
+  border: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(167, 170, 178);
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  position: absolute;
+  margin-top: 21px;
+  margin-left: 36%;
+}
+
+/* social */
+
+.socials {
+  margin-top: 12px;
+  display: flex;
+  justify-content: baseline;
+  align-self: center;
+  fill: rgb(161, 161, 161);
+  padding: 10px;
+  cursor: pointer;
+}
+
+#facebook,
+#instagram,
+#twitter,
+#youtube,
+#linkedin,
+#flipboard {
+  width: 30px;
+  padding: 10px;
+}
+
+.socials #facebook:hover,
+#instagram:hover,
+#twitter:hover,
+#youtube:hover,
+#linkedin:hover,
+#flipboard:hover {
+  fill: rgb(236, 236, 236);
+}
+
+/* 8. VIDEOS */
+.videos {
+  background-color: #ececec;
+  margin: 20px;
+}
+.videos h1 {
+  font-family: "TNW Avalon";
+  color: rgb(0, 0, 0);
+  font-size: 38px;
+  padding: 40px;
+  margin-top: 50px;
+}
+
+.video-wrapper {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.videos main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.main-video {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.videos main iframe {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.videos main h2,
+span {
+  color: white;
+  font-family: "TNW Avalon";
+}
+
+.videos main h2 {
+  padding: 10px 0;
+  margin: 20px 30px;
+}
+
+.videos main span {
+  margin: auto 30px;
+  padding-bottom: 20px;
+  font-size: 13px;
+  color: rgb(105, 105, 105);
+}
+
+.videos aside {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+aside img {
+  width: 100%;
+  /* height: 19%; */
+}
+aside h4 {
+  font-family: "TNW Avalon";
+  /* height: 7.5%; */
+}
+
+/* 9 WORK */
+
+.work {
+  display: flex;
+  flex-direction: column;
+  min-width: 500px;
+  background-color: white;
+}
+
+.work-top {
+  display: flex;
+}
+
+.work-top-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-top-left h3 {
+  font-size: 15px;
+  color: gray;
+  display: block;
+  font-family: "Nova Square";
+  margin: 50px 0 10px 20px;
+}
+
+.work-top-left h4 {
+  font-size: 38px;
+  color: rgb(0, 0, 0);
+  display: block;
+  font-family: "TNW Avalon";
+  margin: 10px 0 50px 20px;
+}
+
+.work-top-left p {
+  text-align: left;
+  line-height: 1.6;
+  margin-left: 20px;
+  font-family: "Rubik";
+}
+
+.work-top-left button {
+  background-color: #0cc;
+  width: 130px;
+  padding: 16px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  font-size: 13px;
+  letter-spacing: 0.025em;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.work-top-left button:hover {
+  background-color: rgb(20, 200, 200);
+  color: rgb(241, 241, 241);
+}
+
+.work-top-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.work-top-right .areas {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  margin: 50px 0;
+}
+
+.work-top-right .areas h3 {
+  font-family: "TNW Avalon";
+  font-size: 15px;
+  padding-top: 20%;
+}
+
+.svg-work {
+  width: 50%;
+}
+
+.work-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.work-bottom .companies {
+  width: 10%;
+}
+
+/* 10 FOOTER */
+
+footer {
+  min-height: 500px;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+footer .top-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.top-footer .logo-social {
+  margin: 50px 0 30px 0px;
+  margin-left: 90px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-footer .logo-social svg {
+  width: 170px;
+}
+
+.top-footer .logo-social h2 {
+  font-family: "Rubik";
+  margin: 50px 0;
+}
+
+.top-footer .logo-social .socials {
+  margin-left: -20px;
+}
+
+.top-footer .links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.top-footer .links .center {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  font-family: "TNW Avalon";
+}
+
+.top-footer .links .right {
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  font-family: "TNW Avalon";
+}
+
+.top-footer .links .center p,
+.top-footer .right p {
+  padding: 5px 0;
+}
+
+.items {
+  padding-top: 25px;
+  color: #0cc;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Rubik";
+  padding: 20px 0;
+}
+
+.bottom-footer {
+  border-top: silver solid 1px;
+  text-align: center;
+  padding-top: 100px;
+  font-family: "TNW Avalon";
+}
+
+/* -------------------- */
+@media (min-width: 1024px) {
+  .logo-area > i {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .logo {
+    fill: rgb(167, 170, 178);
+  }
+
+  .logo:hover {
+    fill: rgb(0, 0, 0);
+  }
+
+  .top-menu,
+  .mail {
+    display: none;
+  }
+
+  header {
+    flex-direction: column;
+    height: 168px;
+  }
+
+  header svg {
+    width: 150px;
+    padding: 25px;
+  }
+
+  header .motto {
+    font-size: 17px;
+  }
+
+  .grid-container {
+    height: 400px;
+    margin: 0 5px;
+    grid-gap: 3px;
+  }
+  .popular-flex {
+    flex-direction: column;
+    height: 280px;
+  }
+
+  .top-5 h2 {
+    padding: 10px;
+    font-size: 23px;
+  }
+
+  .bignum {
+    font-size: 28px;
+    padding: 0 8px;
+  }
+
+  .popular h4 {
+    line-height: 1.6;
+  }
+
+  .flex-stories {
+    display: flex;
+    flex-direction: column;
+  }
+  .image-wrapper {
+    flex-direction: row;
+    width: 100%;
+  }
+  .image-wrapper img {
+    border-radius: 60%;
+  }
+
+  .text-wrapper {
+    padding-top: 15px;
+  }
+
+  .channels h1 {
+    font-size: 28px;
+  }
+
+  #mail {
+    left: 24.3%;
+  }
+
+  .input button {
+    margin-left: 34%;
+  }
+
+  .work-top-right {
+    flex-direction: column;
+    justify-content: flex-start;
+    border-left: rgba(128, 128, 128, 0.041) 1px solid;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .input button {
+    margin-left: 32%;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  body {
+    width: 100%;
+  }
+  .video-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-video {
+    min-width: 100%;
+  }
+
+  .input button {
+    margin-left: 32%;
+  }
+
+  .videos aside {
+    flex-direction: row;
+    justify-content: space-between;
+    width: inherit;
+    gap: 10px;
+  }
+  .videos aside img {
+    width: 250px;
+  }
+  .videos aside h4 {
+    padding: 8px;
+  }
+
+  .videos-2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-wrapper {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .image-wrapper img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  .input input {
+    min-width: 70%;
+  }
+
+  #mail {
+    left: 14%;
+  }
+  .input button {
+    margin-left: 39%;
+    width: 5%;
+  }
+  .work-top-right {
+    flex-direction: column;
+    justify-content: flex-start;
+    border-left: rgba(128, 128, 128, 0.041) 1px solid;
+  }
+
+  footer .top-footer {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  header,
+  .grid-container,
+  top-5,
+  .latest,
+  .channels,
+  .email,
+  .videos {
+    min-height: 300px;
+    min-width: inherit;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .input button {
+    margin-left: 20%;
+    width: 5%;
+  }
+}
